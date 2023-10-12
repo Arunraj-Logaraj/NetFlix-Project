@@ -1,0 +1,157 @@
+$primary: #fff;
+$secondary: rgb(229, 9, 20);
+$secondaryHover: rgb(220, 38, 38, 1);
+$margin: 150px 150px;
+$background: rgba(220, 38, 38, 1);
+$black: #333;
+
+$footer: rgba(255, 255, 255, 0.7);
+$fontSize: 60px;
+$fontPara: 23px;
+$fontSize50: 50px;
+$fontPara30: 30px;
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
+
+.movieList {
+  overflow: hidden;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.9) 90%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(../../assets/images/IN-en-20231002-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: auto;
+  .noMoreList {
+    display: flex;
+    flex-direction: column;
+    color: $primary;
+    padding: 230px;
+    justify-content: center;
+    align-items: center;
+    button {
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: $background;
+      color: $primary;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+  .parentdataMovieList {
+    display: flex;
+    // flex-direction: row;
+    margin: 70px 0px;
+    .dataMovieList {
+      color: $primary;
+      //   border: 1px solid black;
+      padding: 10px;
+      margin: 20px;
+      h2 {
+        font-size: 30px;
+      }
+      img {
+        width: 350px;
+        height: 250px;
+      }
+      ul {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        li {
+          list-style: none;
+        }
+      }
+      button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: $background;
+        color: $primary;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media #{$media-desktop} {
+}
+@media #{$media-tablet} {
+}
+@media #{$media-mobile} {
+}
+@media #{$media-mobile-sm} {
+  .movieList {
+    overflow: hidden;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.9) 90%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(../../assets/images/IN-en-20231002-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: auto;
+    .noMoreList {
+      display: flex;
+      flex-direction: column;
+      color: $primary;
+      padding: 50px;
+      justify-content: center;
+      align-items: center;
+      button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: $background;
+        color: $primary;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+    .parentdataMovieList {
+      display: flex;
+      flex-direction: column;
+      .dataMovieList {
+        color: $primary;
+        //   border: 1px solid black;
+        padding: 10px;
+        margin: 20px;
+        h2 {
+          font-size: 30px;
+        }
+        img {
+          width: 250px;
+          height: 150px;
+        }
+        ul {
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          li {
+            list-style: none;
+          }
+        }
+        button {
+          padding: 10px 20px;
+          border-radius: 10px;
+          background-color: $background;
+          color: $primary;
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

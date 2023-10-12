@@ -1,0 +1,125 @@
+$primary: #333;
+$secondary: rgb(255, 255, 255);
+$background: rgba(220, 38, 38, 1);
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
+
+.navbar-container {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  margin: 0px 150px;
+
+  .navbar-logo img {
+    width: 200px;
+  }
+
+  .navbar-select {
+    margin: 25px 0px;
+    select {
+      padding: 7px 20px;
+      border-radius: 5px;
+      // border: 1px solid red;
+      margin: 0px 15px;
+      width: 130px;
+      color: $secondary;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    button {
+      padding: 9px 18px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: $background;
+      color: $secondary;
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+@media #{$media-desktop} {
+  .navbar-container {
+    // background: red;
+    margin: 0px 20px;
+  }
+}
+
+@media #{$media-tablet} {
+  .navbar-container {
+    // background: rgb(26, 223, 0);
+    margin: 0px 20px;
+    .navbar-logo img {
+      width: 150px;
+    }
+    .navbar-select {
+      margin: 10px 0px;
+      select {
+        padding: 2px 8px;
+        border-radius: 5px;
+        margin: 0px 15px;
+      }
+      button {
+        padding: 6px 8px;
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: $background;
+        color: $secondary;
+      }
+    }
+  }
+}
+
+@media #{$media-mobile} {
+  .navbar-container {
+    // background: rgb(37, 15, 161);
+    margin: 0px 5px;
+    .navbar-logo img {
+      width: 120px;
+    }
+    .navbar-select {
+      margin: 10px 0px;
+      select {
+        padding: 2px 8px;
+        border-radius: 5px;
+        width: 90px;
+        margin: 0px 15px;
+      }
+      button {
+        padding: 2px 8px;
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: $background;
+        color: $secondary;
+      }
+    }
+  }
+}
+
+@media #{$media-mobile-sm} {
+  .navbar-container {
+    // background: rgb(255, 0, 157);
+    margin: 0px 5px;
+    .navbar-logo img {
+      width: 120px;
+    }
+    .navbar-select {
+      margin: 10px 0px;
+      select {
+        padding: 2px 8px;
+        border-radius: 5px;
+        margin: 0px 15px;
+      }
+      button {
+        padding: 2px 8px;
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: $background;
+        color: $secondary;
+      }
+    }
+  }
+}

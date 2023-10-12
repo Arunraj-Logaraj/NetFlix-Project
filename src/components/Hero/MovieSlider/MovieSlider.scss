@@ -1,0 +1,53 @@
+.containerMovie {
+  gap: 0.7rem;
+  position: relative;
+  padding: 1rem 0;
+  // overflow-x: hidden;
+  h1 {
+    margin-left: 30px;
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+  }
+  .wrapper {
+    .slider {
+      display: flex;
+      width: max-content;
+      gap: 0.6rem;
+      transform: translateX(0px);
+      transition: 1s ease-in-out;
+      margin-left: 5px;
+    }
+    .slider-action {
+      box-shadow: 1px 2px 3px 5px #888888;
+      overflow-x: hidden;
+      margin: 0px 20px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      z-index: 99;
+      height: 15%;
+      top: 7rem;
+      bottom: 0;
+      width: 30px;
+      transition: 0.1s ease-in-out;
+      svg {
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+      }
+    }
+    .left {
+      left: 0;
+    }
+    .right {
+      right: 0;
+    }
+    .none {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,259 @@
+$primary: #fff;
+$secondary: rgb(229, 9, 20);
+$secondaryHover: rgb(220, 38, 38, 1);
+$margin: 150px 150px;
+$background: rgba(220, 38, 38, 1);
+
+$footer: rgba(255, 255, 255, 0.7);
+$fontSize: 60px;
+$fontPara: 23px;
+$fontSize50: 50px;
+$fontPara30: 30px;
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
+
+.container-topNav {
+  position: sticky;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  position: fixed;
+  // border: 1px solid red;
+  .topNav-List {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+      li {
+        margin: 0px 10px;
+        background-color: transparent;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $primary;
+        }
+      }
+    }
+
+    ul {
+      li {
+        a {
+          &:hover {
+            // text-shadow: 0px 0px 25px black, 0 0 25px $secondaryHover,
+            // background-color: transparent;
+            //   0 0 10px $secondaryHover;
+            // box-shadow: 0 1px 2px 0 $secondaryHover,
+            //   0 6px 20px 0 $secondaryHover;
+            background: -webkit-linear-gradient(
+              0deg,
+              rgba(255, 255, 255, 0.75),
+              rgba(255, 255, 255, 0.25)
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            backdrop-filter: blur(10px);
+          }
+        }
+      }
+    }
+  }
+
+  .topNavButton {
+    button {
+      padding: 7px 20px;
+      background-color: $secondary;
+      outline: none;
+      border: none;
+      font-weight: 500;
+      color: $primary;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 2px;
+      &:hover {
+        // border: 0.1px solid $primary;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 $secondaryHover;
+
+        background-color: $secondaryHover;
+      }
+    }
+    button {
+    }
+  }
+}
+
+.scrolled {
+  background: transparent;
+}
+.notScrolled {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media #{$media-desktop} {
+}
+@media #{$media-tablet} {
+}
+@media #{$media-mobile} {
+  .container-topNav {
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
+    position: fixed;
+    // border: 1px solid red;
+    .topNav-List {
+      display: flex;
+      align-items: center;
+      .topNav-logo {
+        img {
+          // border: 1px solid red;
+          width: 50px;
+          height: 50px;
+        }
+      }
+      ul {
+        display: flex;
+        li {
+          margin: 0px 10px;
+          background-color: transparent;
+          list-style: none;
+          font-size: 12px;
+          a {
+            text-decoration: none;
+            color: $primary;
+          }
+        }
+      }
+
+      ul {
+        li {
+          a {
+            &:hover {
+              background: -webkit-linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.75),
+                rgba(255, 255, 255, 0.25)
+              );
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              backdrop-filter: blur(10px);
+            }
+          }
+        }
+      }
+    }
+
+    .topNavButton {
+      button {
+        padding: 1px 5px;
+        background-color: $secondary;
+        outline: none;
+        // font-size: 5px;
+        border: none;
+        // font-weight: 500;
+        color: $primary;
+        font-size: 10px;
+        cursor: pointer;
+        border-radius: 2px;
+        &:hover {
+          // border: 0.1px solid $primary;
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2),
+            0 3px 20px 0 $secondaryHover;
+
+          background-color: $secondaryHover;
+        }
+      }
+      button {
+      }
+    }
+  }
+}
+@media #{$media-mobile-sm} {
+  .container-topNav {
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
+    position: fixed;
+    // border: 1px solid red;
+    .topNav-List {
+      display: flex;
+      align-items: center;
+      .topNav-logo {
+        img {
+          // border: 1px solid red;
+          width: 50px;
+          height: 50px;
+        }
+      }
+      ul {
+        display: flex;
+        li {
+          margin: 0px 10px;
+          background-color: transparent;
+          list-style: none;
+          font-size: 12px;
+          a {
+            text-decoration: none;
+            color: $primary;
+          }
+        }
+      }
+
+      ul {
+        li {
+          a {
+            &:hover {
+              background: -webkit-linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.75),
+                rgba(255, 255, 255, 0.25)
+              );
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              backdrop-filter: blur(10px);
+            }
+          }
+        }
+      }
+    }
+
+    .topNavButton {
+      button {
+        padding: 1px 5px;
+        background-color: $secondary;
+        outline: none;
+        // font-size: 5px;
+        border: none;
+        // font-weight: 500;
+        color: $primary;
+        font-size: 10px;
+        cursor: pointer;
+        border-radius: 2px;
+        &:hover {
+          // border: 0.1px solid $primary;
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2),
+            0 3px 20px 0 $secondaryHover;
+
+          background-color: $secondaryHover;
+        }
+      }
+      button {
+      }
+    }
+  }
+}
